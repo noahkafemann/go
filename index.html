@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go Spiel - Gegen KI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Go Spiel</h1>
+            <p class="subtitle">Spiele gegen die KI</p>
+        </header>
+ 
+        <div class="controls">
+            <div class="control-group">
+                <label for="boardSize">Brettgröße:</label>
+                <select id="boardSize">
+                    <option value="9">9×9 (Anfänger)</option>
+                    <option value="13">13×13 (Mittel)</option>
+                    <option value="19" selected>19×19 (Standard)</option>
+                </select>
+            </div>
+            <div class="control-group">
+                <label for="difficulty">Schwierigkeit:</label>
+                <select id="difficulty">
+                    <option value="easy">Leicht</option>
+                    <option value="medium" selected>Mittel</option>
+                    <option value="hard">Schwer</option>
+                </select>
+            </div>
