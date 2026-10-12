@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Go Spiel - Gegen KI</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
@@ -12,7 +12,7 @@
             <h1>Go Spiel</h1>
             <p class="subtitle">Spiele gegen die KI</p>
         </header>
- 
+
         <div class="controls">
             <div class="control-group">
                 <label for="boardSize">Brettgröße:</label>
@@ -30,3 +30,43 @@
                     <option value="hard">Schwer</option>
                 </select>
             </div>
+        </div>
+
+        <div class="game-area">
+            <div class="board-container">
+                <canvas id="goBoard" width="500" height="500"></canvas>
+            </div>
+
+            <div class="sidebar">
+                <div id="status" class="status-box">
+                    Bereit. Schwarz beginnt.
+                </div>
+
+                <div id="explanation" class="explanation-box">
+                    <h3>KI Erklärung</h3>
+                    <p class="explanation-text">Warte auf KI-Zug...</p>
+                </div>
+
+                <div class="captured-display">
+                    <div class="captured-group">
+                        <span class="stone-icon black-stone"></span>
+                        <span id="capturedWhite">0</span> gefangen
+                    </div>
+                    <div class="captured-group">
+                        <span class="stone-icon white-stone"></span>
+                        <span id="capturedBlack">0</span> gefangen
+                    </div>
+                </div>
+
+                <div class="game-controls">
+                    <button id="passBtn" type="button">Passen</button>
+                    <button id="resignBtn" type="button">Aufgeben</button>
+                    <button id="resetBtn" type="button">Neues Spiel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
